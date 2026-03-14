@@ -1,0 +1,9 @@
+[project]
+name = "collection-tracker-scrapper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "scrapy>=2.14.2",
+]

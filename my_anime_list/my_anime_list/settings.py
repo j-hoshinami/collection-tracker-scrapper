@@ -14,17 +14,23 @@ NEWSPIDER_MODULE = "my_anime_list.spiders"
 
 ADDONS = {}
 
+FEED_EXPORT_INDENT = 4
+
+HTTPERROR_ALLOWED_CODES = [405]
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "my_anime_list (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+# ROBOTSTXT_OBEY = False
 
 # Concurrency and throttling settings
 #CONCURRENT_REQUESTS = 16
 CONCURRENT_REQUESTS_PER_DOMAIN = 16
 DOWNLOAD_DELAY = 0.01
+RANDOMIZE_DOWNLOAD_DELAY = True
+COOKIES_ENABLED = True
 
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
@@ -64,14 +70,14 @@ DOWNLOAD_DELAY = 0.01
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
-#AUTOTHROTTLE_ENABLED = True
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-#AUTOTHROTTLE_START_DELAY = 5
+AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-#AUTOTHROTTLE_MAX_DELAY = 60
+AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-#AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
 #AUTOTHROTTLE_DEBUG = False
 

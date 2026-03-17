@@ -14,5 +14,5 @@ class MyAnimeListItem(scrapy.Item):
     end_date = scrapy.Field()
     available_on = scrapy.Field()
     genres = scrapy.Field()
-    studio = scrapy.Field()
+    studios = scrapy.Field()
     premiered = scrapy.Field()

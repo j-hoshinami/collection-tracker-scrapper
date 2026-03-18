@@ -16,3 +16,4 @@ class MyAnimeListItem(scrapy.Item):
     genres = scrapy.Field()
     studios = scrapy.Field()
     premiered = scrapy.Field()
+    origin_url = scrapy.Field()
